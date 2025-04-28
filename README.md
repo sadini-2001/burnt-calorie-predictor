@@ -36,4 +36,4 @@ Performed comprehensive EDA to better understand the dataset:
 - Deployed using **Streamlit Cloud** with source code hosted on **GitHub**
 
 ## 🔗 Links
-- **Live App**: [click Here](https://burnt-calorie-predictor-hp2zvwkcyednrbpgjc7svd.streamlit.app/Prediction)
+- **Live App**: [Click Here](https://burnt-calorie-predictor-hp2zvwkcyednrbpgjc7svd.streamlit.app/)
