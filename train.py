@@ -14,13 +14,11 @@ df = df.drop(columns=['User_ID'])
 X = df.drop(columns=['Calories'])
 y = df['Calories']
 
-# using the train test split function
 X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     random_state=104,
                                                     test_size=0.2,
                                                     shuffle=True)
 
-# Convert categorical variables to category dtype
 categorical_cols = ['Gender']
 numeric_cols = ['Duration', 'Heart_Rate', 'Body_Temp', 'Age', 'Weight', 'Height']
 
@@ -31,17 +29,19 @@ preprocessor = ColumnTransformer(
     ]
 )
 
-# Define pipeline
+
 pipeline = Pipeline([
     ('preprocessor', preprocessor),
     ('svr', SVR(kernel='rbf'))
 ])
+
 
 param_grid = {
     'svr__C': [0.01, 0.1, 1, 10, 100],
     'svr__epsilon': [0.01, 0.1, 0.5, 1, 2],
     'svr__gamma': [0.001, 0.01, 0.1, 1, 'scale', 'auto']
 }
+
 
 grid_search = GridSearchCV(pipeline, param_grid, cv=5, scoring='neg_mean_squared_error', n_jobs=-1)
 grid_search.fit(X_train, y_train)
