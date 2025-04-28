@@ -5,15 +5,15 @@ This project is a machine learning web application that predicts the number of c
 Built using a highly accurate model (R² ≈ 0.999) and deployed using **Streamlit Cloud**.
 
 ## 📊 Dataset
-- **Source**: [Kaggle](https://www.kaggle.com/datasets/ruchikakumbhar/calories-burnt-prediction/data)]
+- **Source**: [Kaggle](https://www.kaggle.com/datasets/ruchikakumbhar/calories-burnt-prediction/data)
 - **Features**:
   - Age
   - Gender
   - Height
   - Weight
   - Heart Rate
-  - Exercise Duration
-  - Body Temperature
+  - Exercise Duration (min)
+  - Body Temperature (°C)
     
 ## 🔎 Exploratory Data Analysis (EDA)
 Performed comprehensive EDA to better understand the dataset:
@@ -23,9 +23,9 @@ Performed comprehensive EDA to better understand the dataset:
 - **Outlier detection** using Isolation Forest algorithm
 
 ## 🛠️ Model Building
-- Preprocessed data and handled outliers
-- Trained multiple regression models
-- Selected the best-performing model based on R² score
+- Preprocessed data (No duplicates and missing values in the oiginal data set)
+- Trained multiple regression models (Random Forest and SVR)
+- Selected the best-performing model based on R² score (SVR)
 - Achieved a **high R² value of 0.999**, indicating excellent model performance
 
 ## 🚀 Application
