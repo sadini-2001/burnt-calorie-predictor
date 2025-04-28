@@ -1,8 +1,8 @@
 # Calories Burnt Prediction App
 
 ## 📌 Overview
-This project is a machine learning web application that predicts the number of calories burnt based on user input features.  
-Built using a highly accurate model (R² ≈ 0.999) and deployed using **Streamlit Cloud**.
+This is a solo project where I built a machine learning web application that predicts the number of calories burnt based on user input features.  
+It uses a highly accurate model (**R² ≈ 0.999**) and is deployed using **Streamlit Cloud**.
 
 ## 📊 Dataset
 - **Source**: [Kaggle](https://www.kaggle.com/datasets/ruchikakumbhar/calories-burnt-prediction/data)
